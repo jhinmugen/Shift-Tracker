@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewWorkingPlace">
+
+    <TextView
+        android:id="@+id/workplaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/newWorkingPlaceActivityName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nameOfWorkingPlace"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/workplaceAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newWorkingPlaceActivityAdress"
+        app:layout_constraintBaseline_toBaselineOf="@+id/adrressOfWorkingPlace"
+        app:layout_constraintEnd_toEndOf="@+id/workplaceName"
+        app:layout_constraintStart_toStartOf="@+id/workplaceName" />
+
+    <EditText
+        android:id="@+id/nameOfWorkingPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/adrressOfWorkingPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="@+id/nameOfWorkingPlace"
+        app:layout_constraintStart_toStartOf="@+id/nameOfWorkingPlace"
+        app:layout_constraintTop_toBottomOf="@+id/nameOfWorkingPlace" />
+
+    <Button
+        android:id="@+id/saveNewWorkingPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/newWorkingPlaceSaveButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/adrressOfWorkingPlace"
+        app:layout_constraintStart_toStartOf="@+id/adrressOfWorkingPlace"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="155dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="296dp" />
+
+</android.support.constraint.ConstraintLayout>

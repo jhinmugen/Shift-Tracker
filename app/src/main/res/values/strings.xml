@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Σούρλας SA</string>
+    <string name="title_activity_register_employee">Νέος Εργαζόμενος</string>
+    <string name="title_activity_working_site">Έργα</string>
+    <string name="mainActivityEmployeeButton">Εργαζόμενοι</string>
+    <string name="mainActivityWorkplaceButton">Έργα</string>
+    <string name="mainActivityReportButton">Αποστολή Στοιχείων Εργαζομένων</string>
+    <string name="newEmployeeActivityNewEmployees">Νέος Εργαζόμενος</string>
+    <string name="employeeActivityEmployees">Λίστα Εργαζομένων</string>
+    <string name="newManagerActivityTextViewNameManager">Ονοματεπώνυμο</string>
+    <string name="newManagerActivitySaveManager">Αποθήκευση</string>
+    <string name="newManagerActivityExit">Έξοδος</string>
+    <string name="newWorkingPlaceActivityName">Όνομα Έργου</string>
+    <string name="newWorkingPlaceActivityAdress">Διεύθυνση</string>
+    <string name="newWorkingPlaceSaveButton">Αποθήκευση Έργου</string>
+    <string name="newEmployeeActivityName">Όνομα Εργαζομένου</string>
+    <string name="newEmployeeActivityNewSurname">Επώνυμο Εργαζομένου</string>
+    <string name="newEmployeeActivitySaveEmployee">Αποθήκευση</string>
+    <string name="newEmployeeActivityCAncelEmployee">Ακύρωση</string>
+    <string name="employeeItemStartFinishButton">Έναρξη/Λήξη</string>
+    <string name="employeeItemButtonDelete">Διαγραφή</string>
+    <string name="workingSiteItemStartFinishButton">Έναρξη/Λήξη</string>
+    <string name="workingSiteItemSendButton">Αποστολή</string>
+    <string name="workingSiteItemDeleteButton">Διαγραφή</string>
+</resources>

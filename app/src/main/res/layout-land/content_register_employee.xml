@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".RegisterEmployeeActivity"
+    tools:showIn="@layout/activity_register_employee">
+
+    <TextView
+        android:id="@+id/newEmployName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/newEmployeeActivityName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nameToRestiger"
+        app:layout_constraintEnd_toStartOf="@+id/nameToRestiger"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/newEmployeSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newEmployeeActivityNewSurname"
+        app:layout_constraintBaseline_toBaselineOf="@+id/surnameToRegister"
+        app:layout_constraintEnd_toEndOf="@+id/newEmployName"
+        app:layout_constraintStart_toStartOf="@+id/newEmployName" />
+
+    <EditText
+        android:id="@+id/nameToRestiger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/surnameToRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="@+id/nameToRestiger"
+        app:layout_constraintStart_toStartOf="@+id/nameToRestiger"
+        app:layout_constraintTop_toBottomOf="@+id/nameToRestiger" />
+
+    <Button
+        android:id="@+id/saveEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/newEmployeeActivitySaveEmployee"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cancelEmployee"
+        app:layout_constraintEnd_toStartOf="@+id/cancelEmployee"
+        app:layout_constraintStart_toStartOf="@+id/surnameToRegister" />
+
+    <Button
+        android:id="@+id/cancelEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/newEmployeeActivityCAncelEmployee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/surnameToRegister"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="155dp" />
+
+</android.support.constraint.ConstraintLayout>
